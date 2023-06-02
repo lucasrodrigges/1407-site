@@ -3,22 +3,28 @@ import React from 'react';
 import Logo from './components/Logo';
 import NavHeaderCard from './components/NavHeaderCard';
 
-const navs = [{
-  label: 'EQUIPE',
-  path: '#team',
-}, {
-  label: 'PROGRAMAS',
-  path: '#programs',
-}, {
-  label: 'PREÇOS',
-  path: '#prices',
-}, {
-  label: 'SOBRE NÓS',
-  path: '#about',
-}, {
-  label: 'CONTATO',
-  path: '#contact',
-}];
+const navs = [
+  {
+    label: 'HOME',
+    path: 'home',
+  },
+  // {
+  //   label: 'PROGRAMAS',
+  //   path: '#programs',
+  // },
+  // {
+  //   label: 'PREÇOS',
+  //   path: '#prices',
+  // },
+  {
+    label: 'EQUIPE',
+    path: 'team',
+  },
+  // {
+  //   label: 'CONTATO',
+  //   path: '#contact',
+  // },
+];
 
 export default function Header() {
   return (

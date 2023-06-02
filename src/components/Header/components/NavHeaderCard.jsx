@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 
 export default function NavHeaderCard({ nav }) {
   return (
-    <Link to={nav.path}>
+    <Link to={nav.path} smooth>
       <Typography
         variant="h6"
         fontWeight={400}

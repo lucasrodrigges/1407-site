@@ -33,7 +33,7 @@ const cards = [{
   image: RubensImage,
   path: 'https://www.instagram.com/rubensff73/',
 }, {
-  title: 'Looh',
+  title: 'Nislainy Santos',
   subtitle: 'Admnistração',
   info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla, lacus eget consequat ',
   image: LoohImage,
@@ -42,22 +42,27 @@ const cards = [{
 
 export default function OurTeam() {
   return (
-    <Box sx={{
-      width: {
-        xs: '90%',
-        sm: '75%',
-        md: '80%',
-      },
-      maxWidth: '1368px',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      gap: {
-        xs: 6,
-      },
-      mb: 6,
-    }}
+    <Box
+      id="team"
+      sx={{
+        height: {
+          md: '100vh',
+        },
+        width: {
+          xs: '90%',
+          sm: '75%',
+          md: '80%',
+        },
+        maxWidth: '1368px',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        gap: {
+          xs: 6,
+        },
+        mb: 6,
+      }}
     >
       <TitleTeam />
 
@@ -66,11 +71,11 @@ export default function OurTeam() {
           width: '100%',
           display: 'flex',
           flexWrap: {
-            md: 'wrap',
+            sm: 'wrap',
           },
           flexDirection: {
             xs: 'column',
-            md: 'row',
+            sm: 'row',
           },
           justifyContent: 'center',
           alignItems: 'center',

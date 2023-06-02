@@ -10,8 +10,10 @@ export default function TeamCard({ card }) {
       sx={{
         width: {
           xs: '100%',
-          sm: '80%',
+          sm: '45%',
           md: '30%',
+          lg: '18.5%',
+          // lg: '18%',
         },
         border: '1px solid #f1a902b2',
         transition: '0.5s',
@@ -37,7 +39,8 @@ export default function TeamCard({ card }) {
             objectFit: 'cover',
             height: {
               xs: '200px',
-              sm: '350px',
+              sm: '200px',
+              md: '150px',
             },
           }}
         />
