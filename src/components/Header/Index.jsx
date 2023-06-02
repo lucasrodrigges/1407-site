@@ -1,7 +1,7 @@
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import React from 'react';
-import { Link } from 'react-scroll';
-import Logo from '../../assets/images/1407Logo2.png';
+import Logo from './components/Logo';
+import NavHeaderCard from './components/NavHeaderCard';
 
 const navs = [{
   label: 'EQUIPE',
@@ -25,7 +25,7 @@ export default function Header() {
     <Box sx={{
       height: {
         xs: '100px',
-        md: '200px',
+        md: '150px',
       },
       display: 'flex',
       justifyContent: 'space-between',
@@ -37,18 +37,7 @@ export default function Header() {
       maxWidth: '1368px',
     }}
     >
-      <Box sx={{
-        '& img': {
-          height: {
-            xs: '150px',
-          }
-        },
-      }}>
-        <img
-          src={Logo}
-          alt=""
-        />
-      </Box>
+      <Logo />
 
       <Box sx={{
         display: 'flex',
@@ -58,29 +47,7 @@ export default function Header() {
       }}
       >
         {navs.map((nav) => (
-          <Link key={nav.label} to={nav.path}>
-            <Typography
-              variant="h6"
-              fontWeight={400}
-              fontSize={16}
-              sx={{
-                display: {
-                  xs: 'none',
-                  sm: 'block',
-                },
-                color: 'white01',
-                transition: '0.5s',
-                '&:hover': {
-                  color: 'yellow01',
-                  transition: '0.5s',
-                  cursor: 'pointer',
-                  transform: 'scale(1.1)',
-                },
-              }}
-            >
-              {nav.label}
-            </Typography>
-          </Link>
+          <NavHeaderCard key={nav.label} nav={nav} />
         ))}
       </Box>
     </Box>

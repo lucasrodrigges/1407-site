@@ -17,11 +17,18 @@ export default function CatchPhrases() {
     <Box sx={{
       display: 'flex',
       flexDirection: 'column',
-      justifyContent: 'center',
+      justifyContent: {
+        xs: 'center',
+        md: 'space-between',
+      },
       alignItems: 'center',
       width: {
-        xs: '100%',
+        xs: '90%',
         sm: '80%',
+        // md: '60%',
+      },
+      height: {
+        md: '470px',
       },
       gap: 2,
     }}
@@ -60,6 +67,9 @@ export default function CatchPhrases() {
           <Typography sx={{
             color: 'rgba(255, 255, 255, 0.36)',
             textAlign: 'justify',
+            fontSize: {
+              xs: 14,
+            },
           }}
           >
             {card.text}

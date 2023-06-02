@@ -8,10 +8,10 @@ import CatchPhrases from './Components/CatchPhrases';
 export default function Cross() {
   return (
     <Box sx={{
-      height: {
-        md: 'calc(100vh + 200px)',
+      width: {
+        xs: '90%',
+        md: '80%',
       },
-      width: '90%',
       maxWidth: '1368px',
       display: 'flex',
       flexDirection: {
@@ -19,7 +19,10 @@ export default function Cross() {
         md: 'row',
       },
       alignItems: 'center',
-      gap: 6,
+      gap: {
+        xs: 6,
+        md: 4,
+      },
       mb: 6,
     }}
     >

@@ -9,18 +9,27 @@ export default function Welcome() {
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
-      alignItems: 'center',
-      gap: 4,
+      alignItems: {
+        xs: 'center',
+        sm: 'flex-start',
+      },
+      gap: {
+        xs: 4,
+        md: 2,
+      },
       width: {
         xs: '100%',
         sm: '80%',
+      },
+      height: {
+        md: '470px',
       },
     }}
     >
       <Typography
         sx={{
           fontSize: {
-            xs: '36px',
+            xs: 36,
           },
           fontWeight: 600,
           color: 'green01',
@@ -31,10 +40,15 @@ export default function Welcome() {
       </Typography>
 
       <Typography sx={{
-        fontSize: 14,
+        fontSize: {
+          xs: 14,
+        },
         fontWeight: 400,
         color: 'rgba(255, 255, 255, 0.36)',
-        width: '100%',
+        width: {
+          xs: '100%',
+          md: '80%',
+        },
         textAlign: 'justify',
       }}
       >

@@ -7,6 +7,7 @@ export default function TitleTeam() {
       width: {
         xs: '100%',
         sm: '80%',
+        md: '90%',
       },
       display: 'flex',
       flexDirection: 'column',

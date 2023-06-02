@@ -43,13 +43,17 @@ const cards = [{
 export default function OurTeam() {
   return (
     <Box sx={{
-      width: '90%',
+      width: {
+        xs: '90%',
+      },
       maxWidth: '1368px',
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center',
-      gap: 6,
+      gap: {
+        xs: 6,
+      },
       mb: 6,
     }}
     >
@@ -59,10 +63,19 @@ export default function OurTeam() {
         sx={{
           width: '100%',
           display: 'flex',
-          flexDirection: 'column',
+          flexWrap: {
+            md: 'wrap',
+          },
+          flexDirection: {
+            xs: 'column',
+            md: 'row',
+          },
           justifyContent: 'center',
           alignItems: 'center',
-          gap: 4,
+          gap: {
+            xs: 4,
+            md: 2,
+          },
         }}
       >
         {cards.map((card) => (

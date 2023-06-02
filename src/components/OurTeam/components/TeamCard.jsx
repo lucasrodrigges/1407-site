@@ -11,6 +11,7 @@ export default function TeamCard({ card }) {
         width: {
           xs: '100%',
           sm: '80%',
+          md: '33.33%',
         },
         border: '1px solid #01b4ea5a',
         transition: '0.5s',

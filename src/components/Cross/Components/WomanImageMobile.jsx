@@ -6,7 +6,10 @@ export default function WomanImageMobile() {
   return (
     <Box sx={{
       width: '100%',
-      display: 'flex',
+      display: {
+        xs: 'flex',
+        md: 'none',
+      },
       justifyContent: 'center',
       alignItems: 'center',
       '& img': {
