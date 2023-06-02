@@ -11,6 +11,8 @@ export default function App() {
       backgroundColor: 'black03',
       display: 'flex',
       flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
       gap: 2,
     }}
     >

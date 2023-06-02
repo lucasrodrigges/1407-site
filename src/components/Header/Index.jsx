@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 import Logo from '../../assets/images/1407Logo2.png';
 
 const navs = [{
-  label: 'NOSSO TIME',
+  label: 'EQUIPE',
   path: '#team',
 }, {
   label: 'PROGRAMAS',
@@ -23,22 +23,31 @@ const navs = [{
 export default function Header() {
   return (
     <Box sx={{
-      height: '250px',
+      height: {
+        xs: '100px',
+        md: '200px',
+      },
       display: 'flex',
       justifyContent: 'space-between',
       alignItems: 'center',
-      width: '80%',
+      width: {
+        xs: '100%',
+        md: '80%',
+      },
       maxWidth: '1368px',
       margin: '0 auto',
     }}
     >
-      <Box>
+      <Box sx={{
+        '& img': {
+          height: {
+            xs: '150px',
+          }
+        },
+      }}>
         <img
           src={Logo}
           alt=""
-          style={{
-            height: '250px',
-          }}
         />
       </Box>
 
@@ -56,6 +65,10 @@ export default function Header() {
               fontWeight={400}
               fontSize={16}
               sx={{
+                display: {
+                  xs: 'none',
+                  md: 'block',
+                },
                 color: 'white01',
                 transition: '0.5s',
                 '&:hover': {

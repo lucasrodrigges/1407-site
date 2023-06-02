@@ -1,7 +1,7 @@
+import React from 'react';
 import {
   Box, Button, Card, CardActions, CardContent, CardMedia, Divider, Typography,
 } from '@mui/material';
-import React from 'react';
 import ElsonImage from '../../assets/images/ElsonImage.jpg';
 import RubensImage from '../../assets/images/RubensImage.jpg';
 import JoednaImage from '../../assets/images/JoednaImage.jpg';
@@ -38,10 +38,9 @@ const cards = [{
 export default function OurTeam() {
   return (
     <Box sx={{
-      height: '100vh',
+      // height: '100vh',
       width: '80%',
       maxWidth: '1368px',
-      margin: '0 auto',
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
@@ -49,7 +48,11 @@ export default function OurTeam() {
       gap: 2,
     }}
     >
-      <Box width={1} mb={6}>
+      <Box sx={{
+        width: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+      }}>
         <Typography sx={{
           fontSize: 30,
           fontWeight: 700,
@@ -57,22 +60,25 @@ export default function OurTeam() {
           width: '100%',
         }}
         >
-          NOSSO TIME
+          NOSSA EQUIPE
         </Typography>
         <Divider sx={{
           width: '61px',
-          height: '0px',
           border: '4px solid #01b2ea',
         }}
         />
       </Box>
 
-      <Box
+      {/* <Box
         sx={{
           width: '100%',
           display: 'flex',
-          // flexWrap: 'wrap',
-          justifyContent: 'flex-start',
+          flexDirection: {
+            xs: 'column',
+          },
+          justifyContent: {
+            xs: 'center',
+          },
           gap: 2,
         }}
       >
@@ -143,7 +149,7 @@ export default function OurTeam() {
             </CardActions>
           </Card>
         ))}
-      </Box>
+      </Box> */}
     </Box>
   );
 }

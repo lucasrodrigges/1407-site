@@ -3,9 +3,8 @@ import {
 } from '@mui/material';
 import React from 'react';
 import WomanImage from '../../assets/images/woman-cross.png';
+import WomanMobileImage from '../../assets/images/woman-cross-mobile.png';
 import ArrowButton from '../../assets/ArrowButton';
-
-import './Styles/Cross.css'
 
 const CROSS_LINK_WPP = 'https://api.whatsapp.com/send?phone=5579991201407&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20aula%20experimental%20gratuita.%20Quais%20dias%20e%20hor%C3%A1rios%20dispon%C3%ADveis?';
 
@@ -20,30 +19,51 @@ const cards = [{
 export default function Cross() {
   return (
     <Box sx={{
-      height: 'calc(100vh - 250px)',
-      width: '80%',
+      height: {
+        xs: 'calc(100vh + 100px)',
+        md: 'calc(100vh + 200px)',
+      },
+      width: '90%',
       maxWidth: '1368px',
-      margin: '0 auto',
       display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'flex-start',
-      gap: 2,
+      flexDirection: {
+        xs: 'column',
+        md: 'row',
+      },
+      gap: 6,
     }}
     >
+       <Box sx={{
+        width: '100%',
+        '& img': {
+          width: '100%',
+        },
+     }}>
+     <img
+        src={WomanMobileImage}
+        alt=""
+      />
+     </Box>
+
       <Box sx={{
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'space-between',
-        gap: 2,
+        justifyContent: 'center',
+        alignItems: 'center',
+        gap: 4,
+        width: '100%',
         maxWidth: '430px',
-        height: '472px',
       }}
       >
         <Typography
           sx={{
-            fontSize: 64,
+            fontSize: {
+              xs: '36px',
+              md: '64px',
+            },
             fontWeight: 600,
             color: 'green01',
+            width: '100%',
           }}
         >
           CROSS
@@ -87,22 +107,32 @@ export default function Cross() {
         </Button>
       </Box>
 
-      <img
-        className='section_1_image'
-        src={WomanImage}
-        alt=""
-        style={{
-          width: '305px',
+     <Box sx={{
+      display: {
+        xs: 'none',
+        md: 'block',
+      },
+      '& img': {
+        width: '305px',
           height: '472px',
           borderRadius: '20px',
           objectFit: 'cover',
           transition: '0.8s',
-        }}
+      }
+     }}>
+     <img
+        className='section_1_image'
+        src={WomanImage}
+        alt=""
       />
+     </Box>
 
       <Box sx={{
         display: 'flex',
         flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: '100%',
         gap: 2,
       }}
       >
@@ -111,7 +141,7 @@ export default function Cross() {
             key={card.title}
             sx={{
               backgroundColor: 'black02',
-              width: '100%',
+              width: '90%',
               maxWidth: '335px',
               display: 'flex',
               flexDirection: 'column',
@@ -154,7 +184,6 @@ export default function Cross() {
             </IconButton>
           </Box>
         ))}
-
       </Box>
     </Box>
   );
