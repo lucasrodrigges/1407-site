@@ -20,7 +20,6 @@ export default function Cross() {
   return (
     <Box sx={{
       height: {
-        xs: 'calc(100vh + 100px)',
         md: 'calc(100vh + 200px)',
       },
       width: '90%',

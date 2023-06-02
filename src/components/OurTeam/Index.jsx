@@ -38,14 +38,13 @@ const cards = [{
 export default function OurTeam() {
   return (
     <Box sx={{
-      // height: '100vh',
-      width: '80%',
+      width: '90%',
       maxWidth: '1368px',
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center',
-      gap: 2,
+      gap: 6,
     }}
     >
       <Box sx={{
@@ -69,24 +68,23 @@ export default function OurTeam() {
         />
       </Box>
 
-      {/* <Box
+      <Box
         sx={{
           width: '100%',
           display: 'flex',
-          flexDirection: {
-            xs: 'column',
-          },
-          justifyContent: {
-            xs: 'center',
-          },
-          gap: 2,
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          gap: 4,
         }}
       >
         {cards.map((card) => (
           <Card
             key={card.title}
             sx={{
-              width: '360px',
+              width: {
+                xs: '90%',
+              },
             }}
           >
             <CardMedia
@@ -149,7 +147,7 @@ export default function OurTeam() {
             </CardActions>
           </Card>
         ))}
-      </Box> */}
+      </Box>
     </Box>
   );
 }
