@@ -32,10 +32,9 @@ export default function Header() {
       alignItems: 'center',
       width: {
         xs: '100%',
-        md: '80%',
+        sm: '80%',
       },
       maxWidth: '1368px',
-      margin: '0 auto',
     }}
     >
       <Box sx={{
@@ -67,7 +66,7 @@ export default function Header() {
               sx={{
                 display: {
                   xs: 'none',
-                  md: 'block',
+                  sm: 'block',
                 },
                 color: 'white01',
                 transition: '0.5s',

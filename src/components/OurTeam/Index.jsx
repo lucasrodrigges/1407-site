@@ -1,38 +1,43 @@
 import React from 'react';
-import {
-  Box, Button, Card, CardActions, CardContent, CardMedia, Divider, Typography,
-} from '@mui/material';
+import { Box } from '@mui/material';
 import ElsonImage from '../../assets/images/ElsonImage.jpg';
 import RubensImage from '../../assets/images/RubensImage.jpg';
 import JoednaImage from '../../assets/images/JoednaImage.jpg';
 import LoohImage from '../../assets/images/LoohImage.jpg';
 import AdelmoImage from '../../assets/images/AdelmoImage.jpg';
+import TitleTeam from './components/TitleTeam';
+import TeamCard from './components/TeamCard';
 
 const cards = [{
   title: 'Joedna Leal',
-  subtitle: 'CEO & Coach',
+  subtitle: 'Head Coach',
   info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla, lacus eget consequat ',
   image: JoednaImage,
-}, {
-  title: 'Adelmo de Araujo',
-  subtitle: 'Coach',
-  info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla, lacus eget consequat ',
-  image: AdelmoImage,
-}, {
-  title: 'Rubens Silva',
-  subtitle: 'Coach',
-  info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla, lacus eget consequat ',
-  image: RubensImage,
+  path: 'https://www.instagram.com/joednalealcoach/',
 }, {
   title: 'Elson Fonseca',
   subtitle: 'CEO',
   info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla, lacus eget consequat ',
   image: ElsonImage,
+  path: 'https://www.instagram.com/elsonfonseca/',
+}, {
+  title: 'Adelmo de Araujo',
+  subtitle: 'Head Coach',
+  info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla, lacus eget consequat ',
+  image: AdelmoImage,
+  path: 'https://www.instagram.com/ad3lmo/',
+}, {
+  title: 'Rubens Silva',
+  subtitle: 'Coach',
+  info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla, lacus eget consequat ',
+  image: RubensImage,
+  path: 'https://www.instagram.com/rubensff73/',
 }, {
   title: 'Looh',
   subtitle: 'Admnistração',
   info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla, lacus eget consequat ',
   image: LoohImage,
+  path: 'https://www.instagram.com/looh_nislainy/',
 }];
 
 export default function OurTeam() {
@@ -48,26 +53,7 @@ export default function OurTeam() {
       mb: 6,
     }}
     >
-      <Box sx={{
-        width: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-      }}>
-        <Typography sx={{
-          fontSize: 36,
-          fontWeight: 600,
-          color: 'green01',
-          width: '100%',
-        }}
-        >
-          NOSSA EQUIPE
-        </Typography>
-        <Divider sx={{
-          width: '61px',
-          border: '4px solid #01b2ea',
-        }}
-        />
-      </Box>
+      <TitleTeam />
 
       <Box
         sx={{
@@ -80,73 +66,7 @@ export default function OurTeam() {
         }}
       >
         {cards.map((card) => (
-          <Card
-            key={card.title}
-            sx={{
-              width: {
-                xs: '90%',
-              },
-            }}
-          >
-            <CardMedia
-              component="img"
-              image={card.image}
-              sx={{
-                objectFit: 'cover',
-                height: '180px',
-              }}
-            />
-            <CardContent>
-              <Typography sx={{
-                fontSize: 18,
-                fontWeight: 700,
-                fontStyle: 'italic',
-                textTransform: 'uppercase',
-              }}
-              >
-                {card.title}
-              </Typography>
-
-              <Typography sx={{
-                fontSize: 13,
-                fontWeight: 600,
-                fontStyle: 'italic',
-                textTransform: 'capitalize',
-              }}
-              >
-                {card.subtitle}
-              </Typography>
-
-              <Typography sx={{
-                fontSize: 12,
-                fontWeight: 400,
-                textAlign: 'justify',
-                color: 'rgba(13, 13, 13, 0.36)',
-              }}
-              >
-                {card.info}
-              </Typography>
-            </CardContent>
-            <CardActions sx={{
-              display: 'flex',
-              justifyContent: 'flex-end',
-            }}
-            >
-              <Button
-                variant="contained"
-                size="small"
-                sx={{
-                  backgroundColor: 'yellow01',
-                  width: 'fit-content',
-                  '&:hover': {
-                    backgroundColor: 'blue01',
-                  },
-                }}
-              >
-                VER MAIS
-              </Button>
-            </CardActions>
-          </Card>
+          <TeamCard key={card.title} card={card} />
         ))}
       </Box>
     </Box>
