@@ -2,7 +2,7 @@ import {
   Box, Button, IconButton, Typography,
 } from '@mui/material';
 import React from 'react';
-import WomanImage from '../../assets/images/woman-cross.jpeg';
+import WomanImage from '../../assets/images/woman-cross.png';
 import ArrowButton from '../../assets/ArrowButton';
 
 import './Styles/Cross.css'
