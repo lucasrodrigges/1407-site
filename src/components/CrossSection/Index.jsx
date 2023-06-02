@@ -18,6 +18,7 @@ const cards = [{
 export default function CrossSection() {
   return (
     <Box sx={{
+      height: 'calc(100% + 250px)',
       width: '80%',
       maxWidth: '1168px',
       margin: '0 auto',
@@ -83,20 +84,21 @@ export default function CrossSection() {
         display: 'flex',
         flexDirection: 'column',
         gap: 2,
-        // width: '100%',
       }}
       >
         {cards.map((card) => (
-          <Box sx={{
-            backgroundColor: 'black03',
-            width: '100%',
-            maxWidth: '335px',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'flex-start',
-            gap: 2,
-            p: 2,
-          }}
+          <Box
+            key={card.title}
+            sx={{
+              backgroundColor: 'black03',
+              width: '100%',
+              maxWidth: '335px',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'flex-start',
+              gap: 2,
+              p: 2,
+            }}
           >
             <Typography sx={{
               color: 'white01',
