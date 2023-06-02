@@ -10,7 +10,7 @@ import TeamCard from './components/TeamCard';
 
 const cards = [{
   title: 'Joedna Leal',
-  subtitle: 'Head Coach',
+  subtitle: 'HeadCoach',
   info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla, lacus eget consequat ',
   image: JoednaImage,
   path: 'https://www.instagram.com/joednalealcoach/',
