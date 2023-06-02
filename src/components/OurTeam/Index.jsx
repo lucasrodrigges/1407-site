@@ -1,12 +1,38 @@
 import {
-  Box, Card, CardContent, CardMedia, Divider, Typography,
+  Box, Button, Card, CardActions, CardContent, CardMedia, Divider, Typography,
 } from '@mui/material';
 import React from 'react';
 import ElsonImage from '../../assets/images/ElsonImage.jpg';
+import RubensImage from '../../assets/images/RubensImage.jpg';
+import JoednaImage from '../../assets/images/JoednaImage.jpg';
+import LoohImage from '../../assets/images/LoohImage.jpg';
+import AdelmoImage from '../../assets/images/AdelmoImage.jpg';
 
 const cards = [{
-  name: 'Elson',
+  title: 'Joedna Leal',
+  subtitle: 'CEO & Coach',
+  info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla, lacus eget consequat ',
+  image: JoednaImage,
+}, {
+  title: 'Adelmo de Araujo',
+  subtitle: 'Coach',
+  info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla, lacus eget consequat ',
+  image: AdelmoImage,
+}, {
+  title: 'Rubens Silva',
+  subtitle: 'Coach',
+  info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla, lacus eget consequat ',
+  image: RubensImage,
+}, {
+  title: 'Elson Fonseca',
+  subtitle: 'CEO',
+  info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla, lacus eget consequat ',
   image: ElsonImage,
+}, {
+  title: 'Looh',
+  subtitle: 'Admnistração',
+  info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla, lacus eget consequat ',
+  image: LoohImage,
 }];
 
 export default function OurTeam() {
@@ -14,7 +40,7 @@ export default function OurTeam() {
     <Box sx={{
       height: '100vh',
       width: '80%',
-      maxWidth: '1168px',
+      maxWidth: '1368px',
       margin: '0 auto',
       display: 'flex',
       flexDirection: 'column',
@@ -23,7 +49,7 @@ export default function OurTeam() {
       gap: 2,
     }}
     >
-      <Box width={1}>
+      <Box width={1} mb={6}>
         <Typography sx={{
           fontSize: 30,
           fontWeight: 700,
@@ -41,26 +67,28 @@ export default function OurTeam() {
         />
       </Box>
 
-      <Box sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        gap: 2,
-        width: '100%',
-      }}
+      <Box
+        sx={{
+          width: '100%',
+          display: 'flex',
+          // flexWrap: 'wrap',
+          justifyContent: 'flex-start',
+          gap: 2,
+        }}
       >
         {cards.map((card) => (
           <Card
-            key={card.name}
+            key={card.title}
             sx={{
-              width: '260px',
+              width: '360px',
             }}
           >
             <CardMedia
+              component="img"
               image={card.image}
               sx={{
-                height: '174px',
                 objectFit: 'cover',
+                height: '180px',
               }}
             />
             <CardContent>
@@ -71,17 +99,45 @@ export default function OurTeam() {
                 textTransform: 'uppercase',
               }}
               >
-                {card.name}
+                {card.title}
               </Typography>
-              {/* <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica
-              </Typography> */}
+
+              <Typography sx={{
+                fontSize: 13,
+                fontWeight: 600,
+                fontStyle: 'italic',
+                textTransform: 'capitalize',
+              }}
+              >
+                {card.subtitle}
+              </Typography>
+
+              <Typography sx={{
+                fontSize: 12,
+                fontWeight: 400,
+                textAlign: 'justify',
+                color: 'rgba(13, 13, 13, 0.36)',
+              }}
+              >
+                {card.info}
+              </Typography>
             </CardContent>
-            {/* <CardActions>
-              <Button size="small">Share</Button>
-              <Button size="small">Learn More</Button>
-            </CardActions> */}
+            <CardActions sx={{
+              display: 'flex',
+              justifyContent: 'flex-end',
+            }}
+            >
+              <Button
+                variant="contained"
+                size="small"
+                sx={{
+                  backgroundColor: 'pink01',
+                  width: 'fit-content',
+                }}
+              >
+                VER MAIS
+              </Button>
+            </CardActions>
           </Card>
         ))}
       </Box>

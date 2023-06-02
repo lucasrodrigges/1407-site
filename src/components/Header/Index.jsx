@@ -1,7 +1,7 @@
 import { Box, Typography } from '@mui/material';
 import React from 'react';
 import { Link } from 'react-scroll';
-import Logoexample from '../../assets/images/Logo-example.png';
+import Logo from '../../assets/images/1407Logo2.png';
 
 const navs = [{
   label: 'NOSSO TIME',
@@ -28,12 +28,18 @@ export default function Header() {
       justifyContent: 'space-between',
       alignItems: 'center',
       width: '80%',
-      maxWidth: '1168px',
+      maxWidth: '1368px',
       margin: '0 auto',
     }}
     >
       <Box>
-        <img src={Logoexample} alt="" />
+        <img
+          src={Logo}
+          alt=""
+          style={{
+            height: '250px',
+          }}
+        />
       </Box>
 
       <Box sx={{
@@ -48,7 +54,7 @@ export default function Header() {
             <Typography
               variant="h6"
               fontWeight={400}
-              fontSize={14}
+              fontSize={16}
               sx={{
                 color: 'white01',
                 transition: '0.5s',

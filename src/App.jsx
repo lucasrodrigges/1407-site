@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import React from 'react';
 import Header from './components/Header/Index';
-import CrossSection from './components/CrossSection/Index';
+import Cross from './components/Cross/Index';
 import OurTeam from './components/OurTeam/Index';
 
 export default function App() {
@@ -15,7 +15,7 @@ export default function App() {
     }}
     >
       <Header />
-      <CrossSection />
+      <Cross />
       <OurTeam />
     </Box>
   );

@@ -15,12 +15,12 @@ const cards = [{
   text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringil. lacus eget consequat tincidunt, lectus ex.',
 }];
 
-export default function CrossSection() {
+export default function Cross() {
   return (
     <Box sx={{
-      height: 'calc(100% + 250px)',
+      height: 'calc(100vh - 250px)',
       width: '80%',
-      maxWidth: '1168px',
+      maxWidth: '1368px',
       margin: '0 auto',
       display: 'flex',
       justifyContent: 'space-between',
@@ -46,7 +46,7 @@ export default function CrossSection() {
         </Typography>
 
         <Typography sx={{
-          fontSize: 14,
+          fontSize: 16,
           fontWeight: 400,
           color: 'rgba(255, 255, 255, 0.36)',
           width: '90%',
