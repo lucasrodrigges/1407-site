@@ -11,15 +11,17 @@ export default function TeamCard({ card }) {
         width: {
           xs: '100%',
           sm: '80%',
-          md: '33.33%',
+          md: '30%',
         },
-        border: '1px solid #01b4ea5a',
+        border: '1px solid #f1a902b2',
         transition: '0.5s',
         '&:hover': {
           cursor: 'pointer',
           transform: {
             xs: 'scale(1.1)',
             md: 'scale(1.1) translateX(-30px)',
+            border: '1px solid #01b4ea5a',
+            zIndex: 1,
           },
           transition: '0.5s',
         },

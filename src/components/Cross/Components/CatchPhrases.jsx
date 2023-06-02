@@ -25,7 +25,6 @@ export default function CatchPhrases() {
       width: {
         xs: '90%',
         sm: '80%',
-        // md: '60%',
       },
       height: {
         md: '470px',
@@ -69,6 +68,7 @@ export default function CatchPhrases() {
             textAlign: 'justify',
             fontSize: {
               xs: 14,
+              lg: 16,
             },
           }}
           >

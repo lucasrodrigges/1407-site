@@ -48,6 +48,7 @@ export default function Welcome() {
         width: {
           xs: '100%',
           md: '80%',
+          lg: '90%',
         },
         textAlign: 'justify',
       }}

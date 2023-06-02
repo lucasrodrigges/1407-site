@@ -45,6 +45,8 @@ export default function OurTeam() {
     <Box sx={{
       width: {
         xs: '90%',
+        sm: '75%',
+        md: '80%',
       },
       maxWidth: '1368px',
       display: 'flex',

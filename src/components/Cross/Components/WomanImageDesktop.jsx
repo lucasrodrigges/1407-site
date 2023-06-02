@@ -7,7 +7,7 @@ export default function WomanImageDesktop() {
     <Box sx={{
       display: {
         xs: 'none',
-        // md: 'block',
+        lg: 'block',
       },
       '& img': {
         width: '305px',

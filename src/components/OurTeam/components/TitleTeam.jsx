@@ -6,8 +6,6 @@ export default function TitleTeam() {
     <Box sx={{
       width: {
         xs: '100%',
-        sm: '80%',
-        md: '90%',
       },
       display: 'flex',
       flexDirection: 'column',
@@ -18,6 +16,7 @@ export default function TitleTeam() {
         fontWeight: 600,
         color: 'green01',
         width: '100%',
+        textAlign: 'left',
       }}
       >
         NOSSA EQUIPE
