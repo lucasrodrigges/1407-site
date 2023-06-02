@@ -49,7 +49,8 @@ export default function Cross() {
           fontSize: 16,
           fontWeight: 400,
           color: 'rgba(255, 255, 255, 0.36)',
-          width: '90%',
+          width: '100%',
+          textAlign: 'justify',
         }}
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
@@ -109,6 +110,7 @@ export default function Cross() {
 
             <Typography sx={{
               color: 'rgba(255, 255, 255, 0.36)',
+              textAlign: 'justify',
             }}
             >
               {card.text}
