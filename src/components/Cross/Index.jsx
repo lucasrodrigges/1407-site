@@ -2,17 +2,19 @@ import {
   Box, Button, IconButton, Typography,
 } from '@mui/material';
 import React from 'react';
-import WomanImage from '../../assets/images/woman-cross.png';
+import WomanImage from '../../assets/images/woman-cross.jpeg';
 import ArrowButton from '../../assets/ArrowButton';
+
+import './Styles/Cross.css'
 
 const CROSS_LINK_WPP = 'https://api.whatsapp.com/send?phone=5579991201407&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20aula%20experimental%20gratuita.%20Quais%20dias%20e%20hor%C3%A1rios%20dispon%C3%ADveis?';
 
 const cards = [{
   title: 'INSPIRE-SE',
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringil. lacus eget consequat tincidunt, lectus ex.',
+  text: 'Desafie seus limites, encontre inspiração para enfrentar cada desafio e alcançar o que parecia impossível.',
 }, {
-  title: 'DESAFIE-SE',
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringil. lacus eget consequat tincidunt, lectus ex.',
+  title: 'SUPERE-SE',
+  text: 'Supere os obstáculos que surgirem em seu caminho, descubra sua força interior e torne-se a versão mais poderosa e resiliente de si mesmo.',
 }];
 
 export default function Cross() {
@@ -31,53 +33,70 @@ export default function Cross() {
       <Box sx={{
         display: 'flex',
         flexDirection: 'column',
+        justifyContent: 'space-between',
         gap: 2,
         maxWidth: '430px',
+        height: '472px',
       }}
       >
         <Typography
           sx={{
             fontSize: 64,
-            fontWeight: 700,
-            color: 'white01',
+            fontWeight: 600,
+            color: 'green01',
           }}
         >
           CROSS
         </Typography>
 
         <Typography sx={{
-          fontSize: 16,
+          fontSize: 14,
           fontWeight: 400,
           color: 'rgba(255, 255, 255, 0.36)',
           width: '100%',
           textAlign: 'justify',
         }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-          fringilla, lacus eget consequat tincidunt, lectus ex bibendum libero,
-          eget iaculis quam arcu quis mauris. Donec ex neque, egestas in faucibus.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+          Boas vindas ao 1407 - Health & Fitness, o lugar perfeito para você alcançar seus objetivos
+          e se superar a cada treino! Aqui, oferecemos uma experiência única de treinamento
+          funcional de alta intensidade, projetada para transformar seu corpo e sua mente.
+          Com uma equipe preparada e apaixonada, você será bem guiado em cada etapa
+          do caminho rumo à uma melhor qualidade de vida.
+          Nossos treinos diversificados e desafiadores vão ajudar a melhorar sua resistência
+          cardiovascular, construir força muscular e aumentar sua
+          flexibilidade, tudo em um ambiente de comunidade inclusiva e motivadora.
+          Descubra os benefícios do CrossFit e junte-se a nós para se tornar a melhor versão
+          de si mesmo.
         </Typography>
 
         <Button
           variant="contained"
           sx={{
-            backgroundColor: 'pink01',
+            backgroundColor: 'blue01',
             width: 'fit-content',
+            transition: '0.5s',
+            '&:hover': {
+              backgroundColor: 'yellow01',
+              transform: 'scale(1.1)',
+              transition: '0.5s',
+            },
           }}
           onClick={() => window.open(CROSS_LINK_WPP, '_blank')}
         >
-          ENTRE EM CONTATO
+          AGENDE UMA AULA EXPERIMENTAL
         </Button>
       </Box>
 
       <img
+        className='section_1_image'
         src={WomanImage}
         alt=""
         style={{
           width: '305px',
-          height: '440px',
+          height: '472px',
           borderRadius: '20px',
+          objectFit: 'cover',
+          transition: '0.8s',
         }}
       />
 
@@ -91,7 +110,7 @@ export default function Cross() {
           <Box
             key={card.title}
             sx={{
-              backgroundColor: 'black03',
+              backgroundColor: 'black02',
               width: '100%',
               maxWidth: '335px',
               display: 'flex',
@@ -99,10 +118,17 @@ export default function Cross() {
               alignItems: 'flex-start',
               gap: 2,
               p: 2,
+              borderRadius: '10px',
+              transition: '0.5s',
+              '&:hover': {
+                cursor: 'pointer',
+                transform: 'scale(1.1) translateX(-30px)',
+                transition: '0.5s',
+              },
             }}
           >
             <Typography sx={{
-              color: 'white01',
+              color: 'green01',
             }}
             >
               {card.title}
@@ -117,7 +143,7 @@ export default function Cross() {
             </Typography>
 
             <IconButton>
-              <ArrowButton />
+              <ArrowButton color='#01b2ea' />
               <Typography sx={{
                 color: 'white01',
                 ml: 2,

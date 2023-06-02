@@ -53,7 +53,7 @@ export default function OurTeam() {
         <Typography sx={{
           fontSize: 30,
           fontWeight: 700,
-          color: 'white01',
+          color: 'green01',
           width: '100%',
         }}
         >
@@ -62,7 +62,7 @@ export default function OurTeam() {
         <Divider sx={{
           width: '61px',
           height: '0px',
-          border: '4px solid #59253E',
+          border: '4px solid #01b2ea',
         }}
         />
       </Box>
@@ -131,8 +131,11 @@ export default function OurTeam() {
                 variant="contained"
                 size="small"
                 sx={{
-                  backgroundColor: 'pink01',
+                  backgroundColor: 'yellow01',
                   width: 'fit-content',
+                  '&:hover': {
+                    backgroundColor: 'blue01',
+                  },
                 }}
               >
                 VER MAIS

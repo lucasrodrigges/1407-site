@@ -59,9 +59,10 @@ export default function Header() {
                 color: 'white01',
                 transition: '0.5s',
                 '&:hover': {
-                  color: 'pink01',
+                  color: 'yellow01',
                   transition: '0.5s',
                   cursor: 'pointer',
+                  transform: 'scale(1.1)',
                 },
               }}
             >
