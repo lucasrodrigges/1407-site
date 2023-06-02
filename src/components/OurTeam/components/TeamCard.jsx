@@ -19,7 +19,7 @@ export default function TeamCard({ card }) {
           cursor: 'pointer',
           transform: {
             xs: 'scale(1.1)',
-            md: 'scale(1.1) translateX(-40px)',
+            md: 'scale(1.1) translateX(-20px)',
             border: '1px solid #01b4ea5a',
             zIndex: 1,
           },

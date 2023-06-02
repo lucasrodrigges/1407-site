@@ -49,7 +49,7 @@ export default function CatchPhrases() {
               cursor: 'pointer',
               transform: {
                 xs: 'scale(1.1)',
-                md: 'scale(1.1) translateX(-40px) translateY(-20px)',
+                md: 'scale(1.1) translateX(-20px)',
               },
               transition: '0.5s',
             },
