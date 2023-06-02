@@ -30,6 +30,7 @@ export default function Cross() {
         md: 'row',
       },
       gap: 6,
+      mb: 6,
     }}
     >
        <Box sx={{
@@ -58,7 +59,6 @@ export default function Cross() {
           sx={{
             fontSize: {
               xs: '36px',
-              md: '64px',
             },
             fontWeight: 600,
             color: 'green01',
@@ -158,6 +158,7 @@ export default function Cross() {
           >
             <Typography sx={{
               color: 'green01',
+              fontWeight: 600,
             }}
             >
               {card.title}

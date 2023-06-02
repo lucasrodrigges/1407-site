@@ -45,6 +45,7 @@ export default function OurTeam() {
       justifyContent: 'center',
       alignItems: 'center',
       gap: 6,
+      mb: 6,
     }}
     >
       <Box sx={{
@@ -53,8 +54,8 @@ export default function OurTeam() {
         flexDirection: 'column',
       }}>
         <Typography sx={{
-          fontSize: 30,
-          fontWeight: 700,
+          fontSize: 36,
+          fontWeight: 600,
           color: 'green01',
           width: '100%',
         }}
