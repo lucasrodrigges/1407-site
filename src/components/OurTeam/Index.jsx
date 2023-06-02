@@ -16,13 +16,13 @@ const cards = [{
   path: 'https://www.instagram.com/joednalealcoach/',
 }, {
   title: 'Elson Fonseca',
-  subtitle: 'CEO',
+  subtitle: 'HeadCoach',
   info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla, lacus eget consequat ',
   image: ElsonImage,
   path: 'https://www.instagram.com/elsonfonseca/',
 }, {
   title: 'Adelmo de Araujo',
-  subtitle: 'Head Coach',
+  subtitle: 'Coach',
   info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla, lacus eget consequat ',
   image: AdelmoImage,
   path: 'https://www.instagram.com/ad3lmo/',
