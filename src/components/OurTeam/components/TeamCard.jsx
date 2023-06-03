@@ -13,7 +13,6 @@ export default function TeamCard({ card }) {
           sm: '45%',
           md: '30%',
           lg: '18.5%',
-          // lg: '18%',
         },
         border: '1px solid #f1a902b2',
         transition: '0.5s',
@@ -64,16 +63,6 @@ export default function TeamCard({ card }) {
         }}
         >
           {card.subtitle}
-        </Typography>
-
-        <Typography sx={{
-          fontSize: 12,
-          fontWeight: 400,
-          textAlign: 'justify',
-          color: 'rgba(13, 13, 13, 0.36)',
-        }}
-        >
-          {card.info}
         </Typography>
       </CardContent>
       <CardActions sx={{

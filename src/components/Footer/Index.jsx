@@ -1,9 +1,9 @@
 import { Box, Divider, Typography } from '@mui/material';
 import React from 'react';
 import { Instagram, WhatsApp } from '@mui/icons-material';
-import Logo from '../Header/components/Logo';
 import SocialLinkCard from './components/SocialLinkCard';
 import Location from './components/Location';
+import Logo from '../Header/components/Logo';
 
 const socialLinks = [{
   label: 'Instagram',
@@ -33,141 +33,68 @@ export default function Footer() {
         sm: '75%',
         md: '80%',
       },
-      mb: 4,
+      maxWidth: '1368px',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+      mb: 1,
     }}
     >
       <Divider sx={{
-        width: '100%',
-        height: '1px',
         backgroundColor: 'white01',
+        width: '100%',
+        mb: 2,
       }}
       />
 
       <Box sx={{
-        maxWidth: '1368px',
+        width: '100%',
         display: 'flex',
         flexDirection: {
           xs: 'column',
+          sm: 'row',
         },
         justifyContent: 'center',
         alignItems: 'center',
-        mb: {
-        },
-        gap: 1,
+        gap: 2,
       }}
       >
         <Box sx={{
           width: '100%',
           display: 'flex',
-          flexDirection: 'column',
+          flexDirection: {
+            xs: 'row',
+            sm: 'column',
+          },
           justifyContent: 'center',
           alignItems: 'center',
         }}
         >
-          <Box sx={{
-            width: '100%',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-          >
-            <Logo />
-            <Typography sx={{
-              color: 'white01',
-              fontSize: {
-                xs: 12,
-                sm: 14,
-                md: 16,
-              },
-              textAlign: 'center',
-              mb: 2,
-            }}
-            >
-              Saúde & Condicionamento Físico: Cross | Nutrição | Consultório | FMI | AFM.
-            </Typography>
-          </Box>
+          <Logo />
 
-          <Box sx={{
-            width: '100%',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-          >
+          <Box>
             {socialLinks.map((link) => (
               <SocialLinkCard key={link.label} link={link} />
             ))}
           </Box>
         </Box>
 
-        <Divider sx={{
-          width: '100%',
-          height: '1px',
-          backgroundColor: 'white01',
-        }}
-        />
-
         <Location />
       </Box>
 
-      <Divider sx={{
-        width: '100%',
-        height: '1px',
-        backgroundColor: 'white01',
-        mb: 4,
-      }}
-      />
-
-      <Box sx={{
-        width: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        gap: 2,
+      <Typography sx={{
+        color: 'white01',
+        textAlign: 'center',
+        fontSize: {
+          xs: 12,
+        },
+        mt: 1,
+        mb: 1,
       }}
       >
-        <Typography sx={{
-          color: 'white01',
-          fontSize: {
-            xs: 12,
-            md: 14,
-          },
-          textAlign: 'center',
-        }}
-        >
-          © 2023 1407 Health & Fitness. Todos os direitos reservados.
-        </Typography>
-
-        <Typography
-          sx={{
-            color: 'white01',
-            fontSize: {
-              xs: 12,
-              md: 14,
-            },
-            textAlign: 'center',
-            '& a': {
-              color: 'white01',
-              textDecoration: 'underline',
-              '&:hover': {
-                cursor: 'pointer',
-              },
-            },
-          }}
-        >
-          Desenvolvido por
-          {' '}
-          <a
-            href="https://github.com/lucasrodrigges"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Lucas Rodrigues.
-          </a>
-        </Typography>
-      </Box>
+        © 2023 1407 Health & Fitness. Todos os direitos reservados.
+      </Typography>
 
     </Box>
   );

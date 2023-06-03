@@ -8,7 +8,10 @@ export default function Welcome() {
     <Box sx={{
       display: 'flex',
       flexDirection: 'column',
-      justifyContent: 'center',
+      justifyContent: {
+        xs: 'center',
+        lg: 'space-between',
+      },
       alignItems: {
         xs: 'center',
         sm: 'flex-start',

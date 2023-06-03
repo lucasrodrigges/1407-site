@@ -22,8 +22,13 @@ export default function ServiceCard({ service }) {
           borderRadius: 2,
           display: 'flex',
           justifyContent: 'space-between',
+          transition: '0.5s',
           '&:hover': {
             cursor: 'pointer',
+            transform: {
+              lg: 'translateY(-5px) scale(1.02)',
+              transition: '0.5s',
+            },
           },
         }}
       >

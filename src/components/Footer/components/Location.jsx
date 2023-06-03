@@ -18,10 +18,7 @@ export default function Location() {
           xs: '40%',
           md: '50%',
         },
-        maxWidth: '800px',
-      },
-      padding: {
-        xs: 4,
+        maxWidth: '570px',
       },
     }}
     >
@@ -41,8 +38,8 @@ export default function Location() {
 
       <Typography sx={{
         fontSize: {
-          xs: 14,
-          md: 16,
+          xs: 12,
+          md: 14,
         },
         fontWeight: 400,
         color: 'white01',
@@ -50,7 +47,7 @@ export default function Location() {
         textAlign: 'center',
       }}
       >
-        Rua Dep. Carvalho Déda, 161 - Treze de Julho
+        Rua Dep. Carvalho Déda, 161 - Treze de Julho. Aracaju - SE.
       </Typography>
 
       <Typography sx={{
