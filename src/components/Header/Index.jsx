@@ -12,10 +12,10 @@ const navs = [
   //   label: 'PROGRAMAS',
   //   path: '#programs',
   // },
-  // {
-  //   label: 'PREÇOS',
-  //   path: '#prices',
-  // },
+  {
+    label: 'SERVIÇOS',
+    path: 'services',
+  },
   {
     label: 'EQUIPE',
     path: 'team',

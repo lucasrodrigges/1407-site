@@ -3,6 +3,8 @@ import React from 'react';
 import Header from './components/Header/Index';
 import Cross from './components/Cross/Index';
 import OurTeam from './components/OurTeam/Index';
+import Services from './components/Services/Index';
+// import Footer from './components/Footer/Index';
 
 export default function App() {
   return (
@@ -18,7 +20,10 @@ export default function App() {
     >
       <Header />
       <Cross />
+      <Services />
       <OurTeam />
+      {/* <Footer /> */}
+
     </Box>
   );
 }

@@ -1,0 +1,21 @@
+@keyframes dropDown {
+  0% {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.dropDownCardOpen {
+  animation: dropDown 0.8s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.dropDownCardClosed {
+  animation: dropDown 0.8s ease-in-out reverse;
+  animation-fill-mode: forwards;
+}

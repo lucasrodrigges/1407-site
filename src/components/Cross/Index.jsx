@@ -10,6 +10,10 @@ export default function Cross() {
     <Box
       id="home"
       sx={{
+        height: {
+          md: 'calc(100vh - 150px)',
+          lg: 'calc(100vh - 150px)',
+        },
         width: {
           xs: '90%',
           md: '80%',
@@ -25,7 +29,10 @@ export default function Cross() {
           xs: 6,
           md: 4,
         },
-        mb: 6,
+        mb: {
+          xs: 6,
+          lg: 0,
+        },
       }}
     >
       <WomanImageMobile />

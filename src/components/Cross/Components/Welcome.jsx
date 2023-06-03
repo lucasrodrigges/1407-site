@@ -36,7 +36,7 @@ export default function Welcome() {
           width: '100%',
         }}
       >
-        CROSS
+        1407 - Health & Fitness
       </Typography>
 
       <Typography sx={{
