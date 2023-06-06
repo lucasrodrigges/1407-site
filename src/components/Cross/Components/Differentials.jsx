@@ -1,18 +1,17 @@
 import React from 'react';
 import {
-  Box, IconButton, Typography,
+  Box, Typography,
 } from '@mui/material';
-import ArrowButton from '../../../assets/ArrowButton';
 
 const cards = [{
-  title: 'INSPIRE-SE',
-  text: 'Desafie seus limites, encontre inspiração para enfrentar cada desafio e alcançar o que parecia impossível.',
+  title: 'Ambiente Climatizado',
+  text: 'Nosso box é equipado com um sistema de ar-condicionado, garantindo uma temperatura ideal durante todas as suas sessões de exercícios. Aqui, você poderá se concentrar completamente nos seus treinos, sem se preocupar com o desconforto causado pelo calor excessivo ou frio intenso.',
 }, {
-  title: 'SUPERE-SE',
-  text: 'Supere os obstáculos que surgirem em seu caminho, descubra sua força interior e torne-se a versão mais poderosa e resiliente de si mesmo.',
+  title: 'Profissionais Qualificados',
+  text: 'Tenha a confiança de treinar em um box com coaches qualificados que trazem um vasto conhecimento e habilidades para orientar você em cada aspecto do seu treinamento. Eles estão comprometidos em ajudá-lo a atingir seus objetivos de forma segura e eficaz.',
 }];
 
-export default function CatchPhrases() {
+export default function Differentials() {
   return (
     <Box sx={{
       display: 'flex',
@@ -75,7 +74,7 @@ export default function CatchPhrases() {
             {card.text}
           </Typography>
 
-          <IconButton>
+          {/* <IconButton>
             <ArrowButton color="#01b2ea" />
             <Typography sx={{
               color: 'white01',
@@ -84,7 +83,7 @@ export default function CatchPhrases() {
             >
               Saiba Mais
             </Typography>
-          </IconButton>
+          </IconButton> */}
         </Box>
       ))}
     </Box>

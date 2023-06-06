@@ -3,7 +3,7 @@ import React from 'react';
 import WomanImageMobile from './Components/WomanImageMobile';
 import Welcome from './Components/Welcome';
 import WomanImageDesktop from './Components/WomanImageDesktop';
-import CatchPhrases from './Components/CatchPhrases';
+import Differentials from './Components/Differentials';
 
 export default function Cross() {
   return (
@@ -38,7 +38,7 @@ export default function Cross() {
       <WomanImageMobile />
       <Welcome />
       <WomanImageDesktop />
-      <CatchPhrases />
+      <Differentials />
     </Box>
   );
 }
