@@ -8,7 +8,7 @@ import ServiceCard from './components/ServiceCard';
 
 const services = [{
   title: 'CROSS | AULA EXPERIMENTAL GRATUITA',
-  description: 'Descubra o poder transformador do CrossFit com a nossa experiência gratuita! Desafie seus limites, alcance novos patamares de condicionamento físico e faça parte da nossa comunidade apaixonada. Clique no botão abaixo para saber mais!',
+  description: 'Descubra o poder transformador do Cross com a nossa experiência gratuita! Desafie seus limites, alcance novos patamares de condicionamento físico e faça parte da nossa comunidade apaixonada. Clique no botão abaixo para saber mais!',
   path: 'https://api.whatsapp.com/send?phone=5579991201407&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20aula%20experimental%20gratuita.%20Quais%20dias%20e%20hor%C3%A1rios%20dispon%C3%ADveis?',
   icon: <FitnessCenter sx={{
     color: 'white01',
