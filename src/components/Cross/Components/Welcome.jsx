@@ -64,7 +64,7 @@ export default function Welcome() {
         Nossos treinos diversificados e desafiadores vão ajudar a melhorar sua resistência
         cardiovascular, construir força muscular e aumentar sua
         flexibilidade, tudo em um ambiente de comunidade inclusiva e motivadora.
-        Descubra os benefícios do CrossFit e junte-se a nós para se tornar a melhor versão
+        Descubra os benefícios do Cross e junte-se a nós para se tornar a melhor versão
         de si mesmo.
       </Typography>
 
