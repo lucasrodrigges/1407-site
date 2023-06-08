@@ -61,7 +61,7 @@ export default function Services() {
     <Box
       id="services"
       sx={{
-        height: {
+        minHeight: {
           lg: '100vh',
         },
         width: {

@@ -45,7 +45,7 @@ export default function OurTeam() {
     <Box
       id="team"
       sx={{
-        height: {
+        minHeight: {
           md: '100vh',
         },
         width: {
