@@ -1,4 +1,6 @@
-import { Box, Button, Typography } from '@mui/material';
+import {
+  Box, Button, Card, CardMedia, Typography,
+} from '@mui/material';
 import React from 'react';
 
 import './Styles/DropDownCard.css';
@@ -19,6 +21,19 @@ export default function DropDownCard({ open, service }) {
         gap: 2,
       }}
     >
+
+      {service.media && (
+        <Card>
+          <CardMedia
+            component={service.media.component}
+            src={service.media.src}
+            autoPlay
+            loop
+            controls
+            muted
+          />
+        </Card>
+      )}
       <Typography sx={{
         fontSize: {
           xs: 12,

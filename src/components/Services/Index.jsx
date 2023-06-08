@@ -6,6 +6,8 @@ import {
 import ServicesTitle from './components/ServicesTitle';
 import ServiceCard from './components/ServiceCard';
 
+import FMIVideo from '../../assets/videos/FMI.mp4';
+
 const services = [{
   title: 'CROSS | AULA EXPERIMENTAL GRATUITA',
   description: 'Descubra o poder transformador do Cross com a nossa experiência gratuita! Desafie seus limites, alcance novos patamares de condicionamento físico e faça parte da nossa comunidade apaixonada. Clique no botão abaixo para saber mais!',
@@ -30,6 +32,10 @@ const services = [{
     color: 'white01',
   }}
   />,
+  media: {
+    component: 'video',
+    src: FMIVideo,
+  },
 }, {
   title: 'AFM - Avaliação Funcional do Movimento',
   description: 'Descubra o poder da Avaliação Funcional do Movimento (AFM) e transforme a maneira como você se movimenta! Nosso programa exclusivo foi desenvolvido para ajudá-lo a identificar e corrigir desequilíbrios musculares, melhorar a mobilidade e otimizar seu desempenho físico. Com a AFM, você terá uma visão clara de como o seu corpo funciona e receberá orientações personalizadas para maximizar sua eficiência e prevenir lesões. ',
