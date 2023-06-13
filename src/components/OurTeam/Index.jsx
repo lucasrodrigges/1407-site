@@ -7,6 +7,7 @@ import LoohImage from '../../assets/images/LoohImage.jpg';
 import AdelmoImage from '../../assets/images/AdelmoImage.jpg';
 import TitleTeam from './components/TitleTeam';
 import TeamCard from './components/TeamCard';
+import SamaraImage from '../../assets/images/SamaraImage.jpeg';
 
 const cards = [{
   title: 'Joedna Leal',
@@ -32,6 +33,11 @@ const cards = [{
   info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla, lacus eget consequat ',
   image: RubensImage,
   path: 'https://www.instagram.com/rubensff73/',
+}, {
+  title: 'Samara Augusta ',
+  subtitle: 'Nutricionista',
+  image: SamaraImage,
+  path: 'https://www.instagram.com/samaraaugustaa/',
 }, {
   title: 'Nislainy Santos',
   subtitle: 'Admnistração',

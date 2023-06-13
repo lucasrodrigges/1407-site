@@ -12,7 +12,7 @@ export default function TeamCard({ card }) {
           xs: '100%',
           sm: '45%',
           md: '30%',
-          lg: '18.5%',
+          lg: '20%',
         },
         border: '1px solid #f1a902b2',
         transition: '0.5s',
